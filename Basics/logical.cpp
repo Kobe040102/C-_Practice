@@ -49,6 +49,8 @@ int main() {
     wear_coat = (temperature < temperature_for_coat&&wind_speed > wind_speed_for_coat);
     cout << "Do you need to wear a coat using AND? " << wear_coat << endl;
 
+    
+
     cout << endl;
     return 0;
 
