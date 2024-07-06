@@ -40,32 +40,34 @@ int main() {
 
     /* Solution using the modulo operator */
 
-    int balance,dollars,quarters,dimes,nickles,pennies = 0; 
-    cout << "Enter the amount of cents: ";
-    cin >> num_cents;
+    // int balance,dollars,quarters,dimes,nickles,pennies = 0; 
+    // cout << "Enter the amount of cents: ";
+    // cin >> num_cents;
 
-    dollars = num_cents/dollar_val;
-    balance = num_cents%dollar_val;
+    // dollars = num_cents/dollar_val;
+    // balance = num_cents%dollar_val;
 
-    quarters = balance/quarter_val;
-    balance %= quarter_val;
+    // quarters = balance/quarter_val;
+    // balance %= quarter_val;
 
-    dimes = balance / dime_val;
-    balance %= dime_val;
+    // dimes = balance / dime_val;
+    // balance %= dime_val;
 
-    nickles = balance/nickle_val;
-    balance %= nickle_val;
+    // nickles = balance/nickle_val;
+    // balance %= nickle_val;
 
-    pennies = balance;
+    // pennies = balance;
 
-    cout << "\nYou can provide this change as follows: " << endl;
-    cout << "dollars :" << dollars << endl;
-    cout << "quarters :" << quarters << endl;
-    cout << "dimes :" << dimes << endl;
-    cout << "nickles :" << nickles << endl;
-    cout << "pennies :" << pennies << endl;
+    // cout << "\nYou can provide this change as follows: " << endl;
+    // cout << "dollars :" << dollars << endl;
+    // cout << "quarters :" << quarters << endl;
+    // cout << "dimes :" << dimes << endl;
+    // cout << "nickles :" << nickles << endl;
+    // cout << "pennies :" << pennies << endl;
 
-    cout << endl;
+    // cout << endl;
+
+
     return 0;
 
 
