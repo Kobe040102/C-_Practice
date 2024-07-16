@@ -70,16 +70,25 @@ int main() {
 //     }
 
 // Blast off program
-int num;
-    cout << "Enter a positive integer - start the countdown: ";
-    cin >> num;
+// int num;
+//     cout << "Enter a positive integer - start the countdown: ";
+//     cin >> num;
 
-    while(num > 0){
-        cout << num << endl;
-        num--;
-    }
-    cout << "BlastOff!";
+//     while(num <= 10){
+//         cout << num << endl;
+//         num++;
+//     }
+//     cout << "BlastOff!";
 
+// }
+
+int number;
+
+cout << "Enter an integer less than 100: ";
+cin >> number;
+
+while(number >= 100){
+    cout << "Enter an integer less than 100: "
 }
 
 
