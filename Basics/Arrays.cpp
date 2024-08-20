@@ -1,5 +1,6 @@
 // Arrays
 #include <iostream>
+#include <string>
 using namespace std;
 
 int main() {
@@ -22,19 +23,31 @@ int main() {
 
 // cout << "\nThe first high temperature is: " << hi_temps[0] << endl;
 
-int test_scores [5] = {100, 90, 80, 70, 60};
+// int test_scores [5] = {100, 90, 80, 70, 60};
 
-cout << "The first score index 0: " << test_scores[0] << endl;
+// cout << "The first score index 0: " << test_scores[0] << endl;
 
-cout << "The second score index 1: " << test_scores[1] << endl;
+// cout << "The second score index 1: " << test_scores[1] << endl;
 
-cout << "The third score index 2: " << test_scores[2] << endl;
+// cout << "The third score index 2: " << test_scores[2] << endl;
 
-cout << "The fourth score index 3: " << test_scores[3] << endl;
+// cout << "The fourth score index 3: " << test_scores[3] << endl;
 
-cout << "The Fifth score index 4: " << test_scores[4] << endl; 
+// cout << "The Fifth score index 4: " << test_scores[4] << endl; 
 
-cout << test_scores << endl; // Displays memeory address
+// cout << test_scores << endl; // Displays memeory address
+
+vector<string> fruits = {"Apple", "Banna", "orange", "grapes", "strawberry"};
+]
+cout << "Here are the list of fruits: ";
+
+for(int i = 0; i < fruits.size(); i++){
+
+    cout << fruits[i];
+}
+
+
+
 
 return 0;
 }

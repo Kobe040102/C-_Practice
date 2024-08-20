@@ -27,6 +27,6 @@ int main() {
     }
 
     //Multiplcation table 
-
     
+
 }
