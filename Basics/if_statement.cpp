@@ -53,6 +53,8 @@ int main() {
 //         cout <<  "This number " << nums << " is zero";
 //     }
 
+    // Age program
+    
     // int age;
 
     // cout << "Please enter your age: ";
@@ -64,6 +66,27 @@ int main() {
     //     cout << "You are a teenager";
     // } else {
     //     cout << "You are an adult";
+    // }
+
+    // Grades program
+    // char grades;
+
+    // cout << "Please input your grade: ";
+
+    // cin >> grades;
+
+    // if(grades == 'A') {
+    //     cout << "Excellent";
+    // } else if (grades == 'B') {
+    //     cout << "Good";
+    // } else if(grades == 'C') {
+    //     cout << "Average";
+    // } else if(grades == 'D') {
+    //     cout << "Poor";
+    // } else if(grades == 'F') {
+    //     cout << "Failed";
+    // } else {
+    //     cout << "Invalid grade";
     // }
 
     
