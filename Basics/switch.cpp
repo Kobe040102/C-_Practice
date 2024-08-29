@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 using namespace std;
 
 int main() {
@@ -36,29 +37,50 @@ int main() {
     //     default: cout << "Choose no color";
     // }
 
-    int day;
+    // int day;
 
-    cout << "Please input the a day of the week from 1 to 7: ";
+    // cout << "Please input the a day of the week from 1 to 7: ";
 
-    cin >> day;
+    // cin >> day;
 
-    switch(day) {
-        case 1 : cout << "Monday";
+    // switch(day) {
+    //     case 1 : cout << "Monday";
+    //     break;
+    //     case 2: cout << "Tuesday";
+    //     break;
+    //     case 3: cout << "Wednesday";
+    //     break;
+    //     case 4: cout << "Thursday";
+    //     break;
+    //     case 5: cout << "Friday";
+    //     break;
+    //     case 6: cout << "Saturday";
+    //     break;
+    //     case 7: cout << "Sunday";
+    //     break;
+    //     default: cout << "invalid input";
+    // }
+
+    int lines;
+
+    cout << "Please choose one of the following lines: ";
+
+    cin >> lines;
+
+    switch(lines) {
+        case 1 : cout << " I love you so much!";
         break;
-        case 2: cout << "Tuesday";
+        case 2 : cout <<  "You are my best friend!";
         break;
-        case 3: cout << "Wednesday";
+        case 3 : cout << "Please listen to your mother!";
         break;
-        case 4: cout << "Thursday";
+        case 4 : cout << "Feed your dog tonight!";
         break;
-        case 5: cout << "Friday";
+        case 5 : cout << "Goodbye, see you later";
         break;
-        case 6: cout << "Saturday";
-        break;
-        case 7: cout << "Sunday";
-        break;
-        default: cout << "invalid input";
+        default: cout << "Invaild response";
     }
+
 
     return 0;
 }
