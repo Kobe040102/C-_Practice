@@ -69,24 +69,44 @@ int main() {
     // }
 
     // Grades program
-    char grades;
+    // char grades;
 
-    cout << "Please input your grade: ";
+    // cout << "Please input your grade: ";
 
-    cin >> grades;
+    // cin >> grades;
 
-    // if(grades == 'A') {
+    // if(grades == 'A' || grades == 'a') {
     //     cout << "Excellent";
-    // } else if (grades == 'B') {
+    // } else if (grades == 'B' || grades == 'b') {
     //     cout << "Good";
-    // } else if(grades == 'C') {
+    // } else if(grades == 'C' || grades == 'c') {
     //     cout << "Average";
-    // } else if(grades == 'D') {
+    // } else if(grades == 'D' || grades == 'd') {
     //     cout << "Poor";
-    // } else if(grades == 'F') {
+    // } else if(grades == 'F' || grades == 'f') {
     //     cout << "Failed";
     // } else {
     //     cout << "Invalid grade";
+    // }
+
+    // RolePlay game
+
+    // char rolePlay;
+
+    // cout << "What will you do?" << endl;
+
+    // cin >> rolePlay;
+
+    // if(rolePlay == 'A' || rolePlay == 'a') {
+    //     cout << "You attack the enemy";
+    // } else if(rolePlay == 'T' || rolePlay == 't') {
+    //     cout << "You talk to the enemy";
+    // } else if(rolePlay == 'M' || rolePlay == 'm') {
+    //     cout << "You give the enemy money";
+    // } else if(rolePlay == 'R' || rolePlay == 'r') {
+    //     cout << "You just run away";
+    // } else {
+    //     cout << "Quit the game";
     // }
  
     return 0;

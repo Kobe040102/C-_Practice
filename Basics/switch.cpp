@@ -61,26 +61,51 @@ int main() {
     //     default: cout << "invalid input";
     // }
 
-    int lines;
+    // int lines;
 
-    cout << "Please choose one of the following lines: ";
+    // cout << "Please choose one of the following lines: ";
 
-    cin >> lines;
+    // cin >> lines;
 
-    switch(lines) {
-        case 1 : cout << " I love you so much!";
+    // switch(lines) {
+    //     case 1 : cout << " I love you so much!";
+    //     break;
+    //     case 2 : cout <<  "You are my best friend!";
+    //     break;
+    //     case 3 : cout << "Please listen to your mother!";
+    //     break;
+    //     case 4 : cout << "Feed your dog tonight!";
+    //     break;
+    //     case 5 : cout << "Goodbye, see you later";
+    //     break;
+    //     default: cout << "Invaild response";
+    // }
+
+    // Grading System
+
+    int gradingSystem;
+
+    cout << "Input grading score: ";
+
+    cin >> gradingSystem;
+
+    switch(gradingSystem/10) {
+        case 10:
+        case 9:
+        cout << "A";
         break;
-        case 2 : cout <<  "You are my best friend!";
+        case 8: 
+        cout << "B";
         break;
-        case 3 : cout << "Please listen to your mother!";
+        case 7:
+        cout << "C";
         break;
-        case 4 : cout << "Feed your dog tonight!";
+        case 6:
+        cout << "D";
+        default: 
+        cout << "F";
         break;
-        case 5 : cout << "Goodbye, see you later";
-        break;
-        default: cout << "Invaild response";
     }
-
 
     return 0;
 }
