@@ -69,11 +69,11 @@ int main() {
     // }
 
     // Grades program
-    // char grades;
+    char grades;
 
-    // cout << "Please input your grade: ";
+    cout << "Please input your grade: ";
 
-    // cin >> grades;
+    cin >> grades;
 
     // if(grades == 'A') {
     //     cout << "Excellent";
@@ -88,9 +88,6 @@ int main() {
     // } else {
     //     cout << "Invalid grade";
     // }
-
-    
-
-    
+ 
     return 0;
 }
