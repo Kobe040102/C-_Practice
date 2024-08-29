@@ -83,29 +83,63 @@ int main() {
 
     // Grading System
 
-    int gradingSystem;
+    // int gradingSystem;
 
-    cout << "Input grading score: ";
+    // cout << "Input grading score: ";
 
-    cin >> gradingSystem;
+    // cin >> gradingSystem;
 
-    switch(gradingSystem/10) {
-        case 10:
-        case 9:
-        cout << "A";
-        break;
-        case 8: 
-        cout << "B";
-        break;
-        case 7:
-        cout << "C";
-        break;
-        case 6:
-        cout << "D";
-        default: 
-        cout << "F";
-        break;
+    // switch(gradingSystem/10) {
+    //     case 10:
+    //     case 9:
+    //     cout << "A";
+    //     break;
+    //     case 8: 
+    //     cout << "B";
+    //     break;
+    //     case 7:
+    //     cout << "C";
+    //     break;
+    //     case 6:
+    //     cout << "D";
+    //     break;
+    //     case 5:
+    //     cout << "F";
+    //     break;
+    // }
+
+    //Program of wheater
+
+    int celsius;
+    int option;
+
+    cout << "Please input the termperature: ";
+
+    cin >> celsius;
+
+    // Celsius conversion
+
+    int temperature = (celsius * 9/5) + 32;
+
+    if(celsius < 10) {
+        cout << "Cold" << endl;
+        option = 1;
+    } else if(celsius >= 10 && celsius <=25 ) {
+        cout << "Moderate" << endl;
+        option = 2;
+    } else if(celsius > 25){
+        cout << "Hot" << endl;
+        option = 3;
     }
+    // switch statement
+    switch(option) {
+        case 1: cout << "Stay inside and drink something warm.";
+        break;
+        case 2: cout << "Go for a walk";
+        break;
+        case 3: cout << "Go swimming";
+    }
+
 
     return 0;
 }
