@@ -122,7 +122,7 @@ int main() {
     int temperature = (celsius * 9/5) + 32;
 
     if(celsius < 10) {
-        cout << "Cold" << endl;
+        cout << "Cold" << endl; 
         option = 1;
     } else if(celsius >= 10 && celsius <=25 ) {
         cout << "Moderate" << endl;

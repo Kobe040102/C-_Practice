@@ -32,29 +32,29 @@ int main() {
     
     // cout << "First score at index 4: " << test_scores[4] << endl;
 
-    vector <int> test_scores = {100, 95, 60, 32, 10, 82};
+    // vector <int> test_scores = {100, 95, 60, 32, 10, 82};
 
-    cout << "Here is the size of the vector " << test_scores.size() << endl; // Show the size of the vector
+    // cout << "Here is the size of the vector " << test_scores.size() << endl; // Show the size of the vector
 
-    int integer = 200;
+    // int integer = 200;
     
-    integer.push_back(test_scores.at(0)); // Added element within the vector
+    // integer.push_back(test_scores.at(0)); // Added element within the vector
 
-    cout << "Added element! Here is the size of the array " << test_scores.size() << endl; 
+    // cout << "Added element! Here is the size of the array " << test_scores.size() << endl; 
 
-    cout << test_scores[0] << endl;
+    // cout << test_scores[0] << endl;
     
-    cout << test_scores[1] << endl;
+    // cout << test_scores[1] << endl;
     
-    cout << test_scores[2] << endl;
+    // cout << test_scores[2] << endl;
     
-    cout << test_scores[3] << endl;
+    // cout << test_scores[3] << endl;
     
-    cout << test_scores[4] << endl;
+    // cout << test_scores[4] << endl;
     
-    cout << test_scores[5] << endl;
+    // cout << test_scores[5] << endl;
     
-    cout << test_scores[6] << endl;
+    // cout << test_scores[6] << endl;
 
     // 2D vector
     // vector<vector<int>> movie_ratings 
@@ -69,10 +69,51 @@ int main() {
     // cout << movie_ratings[2][3] << endl; // Display 60
     // cout << movie_ratings[1][1] << endl; // Display 9
     // cout << movie_ratings[1][3] << endl; // Display 7
+
+    // Sum all of elements
+//     vector<int> nums = {1,2,3,4,5,6,7,8,9,10};
+
+//     for(int i = 0; i < nums.size(); i++){
+//     int sum = 0;
+//     sum += nums[i];
+// }
+
+//     cout << "The total sum is " << sum;
     
+    // // Find the max element in vector
+    // vector<int> nums = {11,34,90,75,2,45};
 
+    
+    // int max = nums[0];
+    
+    // for(int i = 0; i < nums.size(); i++){
+    //     if(nums[i] > max) {
+    //         max = nums[i];
+    //     }
+    // }
 
+    // cout <<  "Here is the maximum element: " << max;
 
+    // Reverse a vector
+    vector<int> nums = {1,2,3,4,5,6,7,8,9,10};
+
+    int i = 0;
+    int j = nums.size() -1;
+
+    while(i < j) {
+        // Swamp the elements at i and j
+        int temp = nums[i];
+        nums[i] = nums[j];
+        nums[j] = temp;
+        // Move pointers
+        i++;
+        j--;
+        
+    }
+
+    for(int k = 0; k < nums.size(); k++) {
+        cout << nums[k] << " ";
+    }
 
     return 0;
 
