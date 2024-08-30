@@ -94,26 +94,53 @@ int main() {
 
     // cout <<  "Here is the maximum element: " << max;
 
-    // Reverse a vector
-    vector<int> nums = {1,2,3,4,5,6,7,8,9,10};
+    // // Reverse a vector
+    // vector<int> nums = {1,2,3,4,5,6,7,8,9,10};
 
-    int i = 0;
-    int j = nums.size() -1;
+    // int i = 0;
+    // int j = nums.size() -1;
 
-    while(i < j) {
-        // Swamp the elements at i and j
-        int temp = nums[i];
-        nums[i] = nums[j];
-        nums[j] = temp;
-        // Move pointers
-        i++;
-        j--;
+    // while(i < j) {
+    //     // Swamp the elements at i and j
+    //     int temp = nums[i];
+    //     nums[i] = nums[j];
+    //     nums[j] = temp;
+    //     // Move pointers
+    //     i++;
+    //     j--;
         
-    }
+    // }
 
-    for(int k = 0; k < nums.size(); k++) {
-        cout << nums[k] << " ";
-    }
+    // for(int k = 0; k < nums.size(); k++) {
+    //     cout << nums[k] << " ";
+    // }
+
+    // Finding the minuimum element
+    // vector<int> nums = {73,156,80,105,200,110,85,69,70};
+
+    // int min = nums[0];
+
+    // for(int i = 0; i < nums.size(); i++) {
+    //     if(nums[i] < min){
+    //         min = nums[i];
+    //     }
+    // }
+    // cout <<  "The minimum element is: " << min;
+
+    // Finding the Even numbers in the vector
+    // vector<int> nums = {34, 80, 57, 13, 91, 103, 200, 85, 70, 6};
+
+    // int sum;
+
+    // for(int i = 0; i < nums.size(); i++) {
+
+    //     if(nums[i] % 2 == 0){
+
+    //         sum += nums[i];
+    //     }
+    // }
+
+    // cout << sum <<endl;
 
     return 0;
 
