@@ -142,6 +142,18 @@ int main() {
 
     // cout << sum <<endl;
 
+    // calculating the average 
+    vector<int> nums = {25, 50, 75, 100, 125 , 15};
+    int sum = 0;
+    int totalElements = nums.size();
+
+    for(int i = 0; i < totalElements; i++) {
+     
+        sum += nums[i];
+    }
+    double average = static_cast<double>(sum)/totalElements;
+    cout << average;
+
     return 0;
 
 }
