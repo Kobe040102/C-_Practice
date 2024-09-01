@@ -1,4 +1,5 @@
 // Arrays
+#include <vector>
 #include <iostream>
 #include <string>
 using namespace std;
@@ -37,14 +38,29 @@ int main() {
 
 // cout << test_scores << endl; // Displays memeory address
 
-vector<string> fruits = {"Apple", "Banna", "orange", "grapes", "strawberry"};
-]
-cout << "Here are the list of fruits: ";
+// vector<string> fruits = {"Apple", "Banna", "orange", "grapes", "strawberry"};
+// ]
+// cout << "Here are the list of fruits: ";
 
-for(int i = 0; i < fruits.size(); i++){
+// for(int i = 0; i < fruits.size(); i++){
 
-    cout << fruits[i];
+//     cout << fruits[i];
+// }
+
+vector<string> fruits = {"Orange", "Apple", "Grapes", "Strawberry", "Banna", "Peach"};
+string result = "";
+
+for(int i = 0; i < fruits.size(); i++) {
+    result += fruits[i]; //Appending the fruit names
+
+    if(i < fruits.size() -1) {
+       result += ", "; 
+    }
+
+
 }
+    cout << "The fruits are: " << result;
+
 
 
 
