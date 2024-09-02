@@ -56,7 +56,7 @@ for(int i = 0; i < fruits.size(); i++) {
     if(i < fruits.size() -1) {
        result += ", "; 
     }
-
+    
 
 }
     cout << "The fruits are: " << result;

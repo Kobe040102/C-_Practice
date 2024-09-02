@@ -45,25 +45,25 @@ int main(){
         
     // } while(selection != 'q' && selection != 'Q');
 
-    vector<int> nums = { 13, 79, 97, 23, 61, 46 };
-    int index = 0;
-    bool found = false;
+    // vector<int> nums = { 13, 79, 97, 23, 61, 46 };
+    // int index = 0;
+    // bool found = false;
 
-    do {
-         int it = nums[index];
-         if(it % 2 == 0) {
-             cout << "Even found: " << it;
-             found = true;
-         } else {
-             index++;
-         }
+    // do {
+    //      int it = nums[index];
+    //      if(it % 2 == 0) {
+    //          cout << "Even found: " << it;
+    //          found = true;
+    //      } else {
+    //          index++;
+    //      }
 
 
-    } while(index < nums.size() && !found);
+    // } while(index < nums.size() && !found);
 
-    if(!found) {
-        cout << "No even numbers found";
-    }
+    // if(!found) {
+    //     cout << "No even numbers found";
+    // }
 
     return 0;
 }

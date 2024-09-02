@@ -1,4 +1,5 @@
 #include <vector>
+#include <vector>
 #include <iostream>
 using namespace std;
 
@@ -143,16 +144,32 @@ int main() {
     // cout << sum <<endl;
 
     // calculating the average 
-    vector<int> nums = {25, 50, 75, 100, 125 , 15};
-    int sum = 0;
-    int totalElements = nums.size();
+    // vector<int> nums = {25, 50, 75, 100, 125 , 15};
+    // int sum = 0;
+    // int totalElements = nums.size();
 
-    for(int i = 0; i < totalElements; i++) {
+    // for(int i = 0; i < totalElements; i++) {
      
-        sum += nums[i];
+    //     sum += nums[i];
+    // }
+    // double average = static_cast<double>(sum)/totalElements;
+    // cout << average;
+
+    // Appending names
+    vector<string> names = {"Kobe", "Michelle", "Gabe", "John", "Emily"};
+
+    string result = "";
+
+    for(int i = 0; i < names.size(); i++) {
+        result += names[i];
+
+        if(i < names.size() -1) {
+            result += ", ";
+        }
     }
-    double average = static_cast<double>(sum)/totalElements;
-    cout << average;
+    cout << "The names are: " << result;
+
+    
 
     return 0;
 
