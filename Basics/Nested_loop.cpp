@@ -32,23 +32,37 @@ int main() {
     //     cout << endl;
     // }
 
-    string names[4][3] = {
-        {"Kobe","Michelle","Emily"},
-        {"John", "Sonic", "Ruby"},
-        {"Mike", "Gabe", "Steven"},
-        {"Annie", "Dennis", "Koda"}
+    // string names[4][3] = {
+    //     {"Kobe","Michelle","Emily"},
+    //     {"John", "Sonic", "Ruby"},
+    //     {"Mike", "Gabe", "Steven"},
+    //     {"Annie", "Dennis", "Koda"}
+    // };
+
+    // for(int row = 0; row < 4; row++){
+    //     for(int col = 0; col < 3; col++){
+
+    //         if(col == 2){
+    //             cout << names[row][col] << " ";
+    //         } else {
+    //             cout << names[row][col] << ", ";
+    //         }
+    //     }
+    //     cout << endl;
+    // }
+
+    vector<vector<int>> vector_2d {
+        {1, 2, 3},
+        {10, 20, 30,40},
+        {100, 200, 300, 400, 500}
     };
 
-    for(int row = 0; row < 4; row++){
-        for(int col = 0; col < 3; col++){
+    for(int vec = 0; vec < vector_2d.size(); vec++) {
+        for(int val = 0; val < vector_2d[vec].size(); val++) {
 
-            if(col == 2){
-                cout << names[row][col] << " ";
-            } else {
-                cout << names[row][col] << ", ";
-            }
+            cout << vector_2d[vec][val] << " ";
         }
         cout << endl;
     }
-    
+    return 0;
 }
