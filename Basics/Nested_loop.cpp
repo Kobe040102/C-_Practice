@@ -75,32 +75,41 @@ int main() {
     // }
 
     // Histogram Program
-     int num_items = 0;
-     cout << "How many data items do you have: ";
-     cin >> num_items;
+    //  int num_items = 0;
+    //  cout << "How many data items do you have: ";
+    //  cin >> num_items;
 
-     vector<int> data;
+    //  vector<int> data;
 
-     for(int i = 1; i <= num_items; i++){
-         int data_item = 0;
-         cout << "Enter data item " << i << ": ";
-         cin >> data_item;
-         data.push_back(data_item); 
-     }
+    //  for(int i = 1; i <= num_items; i++){
+    //      int data_item = 0;
+    //      cout << "Enter data item " << i << ": ";
+    //      cin >> data_item;
+    //      data.push_back(data_item); 
+    //  }
      
-    cout << "\nDisplaying Histogram" << endl;
-     for(auto val: data){
-         for(int i = 1; i <= val; i++){
-             if(i % 5 == 0){
-                 cout <<"*";
-             } else {
-             cout << "-";
-             }
-         }
-         cout << endl;
-     }
+    // cout << "\nDisplaying Histogram" << endl;
+    //  for(auto val: data){
+    //      for(int i = 1; i <= val; i++){
+    //          if(i % 5 == 0){
+    //              cout <<"*";
+    //          } else {
+    //          cout << "-";
+    //          }
+    //      }
+    //      cout << endl;
+    //  }
     
+    vector<int> pairs = {4,6,8,12};
+    int result = 0;
+    for(int i = 0; i < pairs.size(); i++) {
+        for(int j = i + 1; j < pairs.size(); j++){
+            cout << "(" << pairs[i] << "," << pairs[j] << ")";
+            result = result + pairs.at(i) * pairs.at(j);
+        }
+    }
 
+    cout << result;
 
     return 0;
 }
