@@ -50,19 +50,57 @@ int main() {
     //     }
     //     cout << endl;
     // }
+    
+    // Print elements in a 2D vector
+    // vector<vector<int>> vector_2d {
+    //     {1, 2, 3},
+    //     {10, 20, 30,40},
+    //     {100, 200, 300, 400, 500}
+    // };
 
-    vector<vector<int>> vector_2d {
-        {1, 2, 3},
-        {10, 20, 30,40},
-        {100, 200, 300, 400, 500}
-    };
+    // for(int vec = 0; vec < vector_2d.size(); vec++) {
+    //     for(int val = 0; val < vector_2d[vec].size(); val++) {
 
-    for(int vec = 0; vec < vector_2d.size(); vec++) {
-        for(int val = 0; val < vector_2d[vec].size(); val++) {
+    //         cout << vector_2d[vec][val] << " ";
+    //     }
+    //     cout << endl;
+    // }
 
-            cout << vector_2d[vec][val] << " ";
-        }
-        cout << endl;
-    }
+    // Addition table
+    // for(int num1 = 1; num1 <= 20; num1++){
+    //     for(int num2 = 1; num2 <= 20; num2++){
+    //         cout << num1 << " * " << num2 << " = " << num1 * num2 << endl;
+    //     }
+    //     cout << "----------------" << endl;
+    // }
+
+    // Histogram Program
+     int num_items = 0;
+     cout << "How many data items do you have: ";
+     cin >> num_items;
+
+     vector<int> data;
+
+     for(int i = 1; i <= num_items; i++){
+         int data_item = 0;
+         cout << "Enter data item " << i << ": ";
+         cin >> data_item;
+         data.push_back(data_item); 
+     }
+     
+    cout << "\nDisplaying Histogram" << endl;
+     for(auto val: data){
+         for(int i = 1; i <= val; i++){
+             if(i % 5 == 0){
+                 cout <<"*";
+             } else {
+             cout << "-";
+             }
+         }
+         cout << endl;
+     }
+    
+
+
     return 0;
 }
