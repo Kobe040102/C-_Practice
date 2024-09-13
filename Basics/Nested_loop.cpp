@@ -1,5 +1,6 @@
 #include <iostream>
 #include <vector>
+#include <string>
 using namespace std;
 
 int main() {
@@ -18,16 +19,36 @@ int main() {
     //     cout << "------------------" << endl;
     // }
 
-    int grid[5][3] = {{1,2,3},
-                    {4,5,6},
-                    {7,8,9},
-                    {10,11,12},
-                    {13,14,15}};
+    // int grid[5][3] = {{1,2,3},
+    //                 {4,5,6},
+    //                 {7,8,9},
+    //                 {10,11,12},
+    //                 {13,14,15}};
 
-    for(int row = 0; row < 5; row++){
+    // for(int row = 0; row < 5; row++){
+    //     for(int col = 0; col < 3; col++){
+    //         cout << grid[row][col] << ", ";
+    //     }
+    //     cout << endl;
+    // }
+
+    string names[4][3] = {
+        {"Kobe","Michelle","Emily"},
+        {"John", "Sonic", "Ruby"},
+        {"Mike", "Gabe", "Steven"},
+        {"Annie", "Dennis", "Koda"}
+    };
+
+    for(int row = 0; row < 4; row++){
         for(int col = 0; col < 3; col++){
-            cout << grid[row][col] << ", ";
+
+            if(col == 2){
+                cout << names[row][col] << " ";
+            } else {
+                cout << names[row][col] << ", ";
+            }
         }
         cout << endl;
     }
+    
 }
