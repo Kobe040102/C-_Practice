@@ -47,23 +47,28 @@ int main() {
 //     cout << fruits[i];
 // }
 
-vector<string> fruits = {"Orange", "Apple", "Grapes", "Strawberry", "Banna", "Peach"};
-string result = "";
+// vector<string> fruits = {"Orange", "Apple", "Grapes", "Strawberry", "Banna", "Peach"};
+// string result = "";
 
-for(int i = 0; i < fruits.size(); i++) {
-    result += fruits[i]; //Appending the fruit names
+// for(int i = 0; i < fruits.size(); i++) {
+//     result += fruits[i]; //Appending the fruit names
 
-    if(i < fruits.size() -1) {
-       result += ", "; 
-    }
+//     if(i < fruits.size() -1) {
+//        result += ", "; 
+//     }
     
 
+// }
+//     cout << "The fruits are: " << result;
+
+vector<int> nums = {2,6,9,8,10,12};
+int target = 12;
+
+for(int i = 0; i < nums.size(); i++){
+    for(int j = i + 1; j < nums.size(); j++){
+        if(nums[i] * nums[j] == target){
+            cout << nums[i] << " " << nums[j];
+        }
+    }
 }
-    cout << "The fruits are: " << result;
-
-
-
-
-
-return 0;
 }

@@ -100,16 +100,16 @@ int main() {
     //      cout << endl;
     //  }
     
-    vector<int> pairs = {4,6,8,12};
-    int result = 0;
-    for(int i = 0; i < pairs.size(); i++) {
-        for(int j = i + 1; j < pairs.size(); j++){
-            cout << "(" << pairs[i] << "," << pairs[j] << ")";
-            result = result + pairs.at(i) * pairs.at(j);
-        }
-    }
+    // vector<int> pairs = {4,6,8,12};
+    // int result = 0;
+    // for(int i = 0; i < pairs.size(); i++) {
+    //     for(int j = i + 1; j < pairs.size(); j++){
+    //         cout << "(" << pairs[i] << "," << pairs[j] << ")";
+    //         result = result + pairs.at(i) * pairs.at(j);
+    //     }
+    // }
 
-    cout << result;
+    // cout << result;
 
     return 0;
 }
