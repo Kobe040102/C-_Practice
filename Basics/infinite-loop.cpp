@@ -25,8 +25,6 @@ int main() {
         }
         cout << endl;
     }
-
-    //Multiplcation table 
     
 
 }
