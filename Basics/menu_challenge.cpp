@@ -61,22 +61,25 @@ int main() {
         }
         cout << min << endl;
     // Show the largest number
-     } else if(selection == 'L' || selection == 'l'){
+     } else if(selection == 'L' || selection == 'l') {
         max = data[0];
         for(int large = 0; large < data.size(); large++) {
-            if(data[large] > max){
+            if(data[large] > max) {
                 max = data[large];
             }
-         }
-         cout << max << endl;
+        }
+        cout << max << endl;
+    // Clears the list of numbers 
      } else if(selection == 'C' || selection == 'c') {
          data.clear();
          cout << "All the numbers has been cleared";
+     } else if(selection == 'Q' || selection == 'q') {
+         cout << "You quit the program. Goodbye!";
      } else {
-         cout << "Unkown selection, please try again";
+         cout << "Unknown selection, Please try again" << endl;
      }
     } while(selection != 'Q' && selection != 'q');
-    cout << "You quit the program. Goodbye!";
+    
 
     return 0;
 }
