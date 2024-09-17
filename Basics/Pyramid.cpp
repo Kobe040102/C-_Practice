@@ -1,4 +1,5 @@
 #include <iostream>
+#include <vector>
 using namespace std;
 
 int main() {
@@ -18,15 +19,30 @@ int main() {
 //    }
 
    // Reverse hill pattern
-   for(int i = 0; i < 5; i++){
-       for(int j = 0; j < i; j++){
-           cout << " ";
-       }
-       for(int k = 0; k < 2 * (5 - i) - 1; k++){
-           cout << "*";
-       }
-       cout << endl;
-   }
+//    for(int i = 0; i < 5; i++){
+//        for(int j = 0; j < i; j++){
+//            cout << " ";
+//        }
+//        for(int k = 0; k < 2 * (5 - i) - 1; k++){
+//            cout << "*";
+//        }
+//        cout << endl;
+//    }
+
+// vector<int> arr = {1,2,3,4,5};
+
+// int target = 4; 
+
+// for(int i = 0; i < arr.size(); i++) {
+//     for(int j = i + 1; j < arr.size(); j++) {
+//         if(arr[i] + arr[j] == target) {
+//             cout << " " << arr[i] << " " << arr[j];
+//         } 
+
+//         }
+//         }
+//     }
+
 
    return 0;
 
